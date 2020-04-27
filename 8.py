@@ -55,7 +55,7 @@ kf = LINE("yel10184@bcaoo.com","mai065558mai")
 kf.log("Auth Token : " + str(kf.authToken))
 channelToken = kf.getChannelResult()
 #========================Tokenjs===================================================#
-ajs = LINE("mhh87894@zzrgg.com","mai065558mai")
+ajs = LINE("gcu8936@zzrgg.com","mai065558mai")
 ajs.log("Auth Token : " + str(kf.authToken))
 channelToken = ajs.getChannelResult()
 #==============•••••••••••••••••   BOT WAR V`1 BY TEAM BOT PROTECT •••••••••••••••==============#
