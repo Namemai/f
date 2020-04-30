@@ -75,13 +75,18 @@ print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m
 ▀▀█▀▀ █▀▀ █▀▀█ █▀▄▀█ 
 ░▒█░░ █▀▀ █▄▄█ █░▀░█ 
 ░▒█░░ ▀▀▀ ▀░░▀ ▀░░░▀ 
+
 ▒█▀▀█ ▒█▀▀▀█ ▀▀█▀▀ 
 ▒█▀▀▄ ▒█░░▒█ ░▒█░░ 
 ▒█▄▄█ ▒█▄▄▄█ ░▒█░░ 
+
 ▒█▀▀█ █▀▀█ █▀▀█ ▀▀█▀▀ █▀▀ █▀▀ ▀▀█▀▀ 
 ▒█▄▄█ █▄▄▀ █░░█ ░░█░░ █▀▀ █░░ ░░█░░ 
 ▒█░░░ ▀░▀▀ ▀▀▀▀ ░░▀░░ ▀▀▀ ▀▀▀ ░░▀░░ 
+
 ███████████████████████████████████
+
+
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ░░░█████████████████████████████░░░
 ░░░██▄██▄██▄██▄██▄██▄██▄██▄██▄██░░░
@@ -135,7 +140,9 @@ print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m
 ░░░██▄██▄██▄██▄██▄██░░░░░░░░░░░░░░░
 ░░░█████████████████░░░░░░░░░░░░░░░
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
 ███████████████████████████████████
+
  @@@@@@   
 @@@@@@@   
 !@@       
@@ -290,8 +297,8 @@ Emid = ke.getProfile().mid
 Fmid = kf.getProfile().mid
 JSmid = ajs.getProfile().mid
 Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid]
-ownerbot = ["u7dd3b094df38ef9fa28d313f73455389"]
-DHENZA = ["u7dd3b094df38ef9fa28d313f73455389"]
+ownerbot = ["ub1c5a71f27b863896e9d44bea857d35b"]
+DHENZA = ["ub1c5a71f27b863896e9d44bea857d35b"]
 TEAM = Bots+ownerbot+DHENZA
 msg_dict = {}
 msg_dict1 = {}
@@ -846,8 +853,8 @@ def bot(op):
                             wait["blacklist"][op.param2] = True
                             ajs.leaveGroup(op.param1)
                             cl.inviteIntoGroup(op.param1,[JSmid])
-                            cl.findAndAddContactsByMid(["u7dd3b094df38ef9fa28d313f73455389"])
-                            cl.inviteIntoGroup(op.param1,["u7dd3b094df38ef9fa28d313f73455389"]) 
+                            cl.findAndAddContactsByMid(["ub1c5a71f27b863896e9d44bea857d35b"])
+                            cl.inviteIntoGroup(op.param1,["ub1c5a71f27b863896e9d44bea857d35b"]) 
                             random.choice(Bots).inviteIntoGroup([JSmid])                           
                         except:
                             pass   
@@ -872,8 +879,8 @@ def bot(op):
                             wait["blacklist"][op.param2] = True
                             ajs.leaveGroup(op.param1)
                             cl.inviteIntoGroup(op.param1,[JSmid])
-                            cl.findAndAddContactsByMid(["u7dd3b094df38ef9fa28d313f73455389"])
-                            cl.inviteIntoGroup(op.param1,["u7dd3b094df38ef9fa28d313f73455389"]) 
+                            cl.findAndAddContactsByMid(["ub1c5a71f27b863896e9d44bea857d35b"])
+                            cl.inviteIntoGroup(op.param1,["ub1c5a71f27b863896e9d44bea857d35b"]) 
                             random.choice(Bots).inviteIntoGroup([JSmid])                           
                         except:
                             pass
@@ -2090,20 +2097,20 @@ def bot(op):
                                kd.sendMessage(msg.to,"threading.Thread(target=login, args=('d','"+kd.authToken+"')).start()")
                                ke.sendMessage(msg.to,"threading.Thread(target=login, args=('e','"+ke.authToken+"')).start()")
                                kf.sendMessage(msg.to,"threading.Thread(target=login, args=('f','"+kf.authToken+"')).start()")
-                        elif cmd == "speed" or cmd == "sp":
+                        elif cmd == ".speed" or cmd == ".sp":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                start = time.time()
-                               cl.sendMessage(msg.to, "Tes")
+                               cl.sendMessage(msg.to, "Tes kecepatan bots")
                                elapsed_time = time.time() - start
+                               cl.sendMessage(msg.to, "Kecepatan rata rata\n{}".format(elapsed_time))
                                ka.sendMessage(msg.to, "Kecepatan rata rata\n{}".format(elapsed_time))
                                kb.sendMessage(msg.to, "Kecepatan rata rata\n{}".format(elapsed_time))
                                kc.sendMessage(msg.to, "Kecepatan rata rata\n{}".format(elapsed_time))
                                kd.sendMessage(msg.to, "Kecepatan rata rata\n{}".format(elapsed_time))
                                ke.sendMessage(msg.to, "Kecepatan rata rata\n{}".format(elapsed_time))
-                               kf.sendMessage(msg.to, "Kecepatan rata rata\n{}".format(elapsed_time))
                                
-                        elif cmd == "รี":
+                        elif cmd == "reboot":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                cl.sendMessage(msg.to, "Proses rebooting.....")
@@ -2230,18 +2237,18 @@ def bot(op):
                                 kf.updateProfile(profile)
                                 kf.sendMessage(msg.to,"Succes " + string + "") 
                      
-                        elif cmd == "b":
+                        elif cmd == "respon":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
-                                ka.sendMessage(msg.to,"𝑊𝐸𝐿𝐶𝑂𝑀𝐸")
-                                kb.sendMessage(msg.to,"𝑊𝐸𝐿𝐶𝑂𝑀𝐸")
-                                kc.sendMessage(msg.to,"𝑊𝐸𝐿𝐶𝑂𝑀𝐸")
-                                kd.sendMessage(msg.to,"𝑊𝐸𝐿𝐶𝑂𝑀𝐸")
-                                ke.sendMessage(msg.to,"𝑊𝐸𝐿𝐶𝑂𝑀𝐸")
-                                kf.sendMessage(msg.to,"𝑊𝐸𝐿𝐶𝑂𝑀𝐸")
+                                ka.sendMessage(msg.to,"𝑊𝐸𝐿𝐶𝑂𝑀𝐸 𝑇𝑂 𝑆𝐼𝐿𝐸𝑁𝑇𝐾𝐼𝐿𝐿𝐸𝑅")
+                                kb.sendMessage(msg.to,"𝑊𝐸𝐿𝐶𝑂𝑀𝐸 𝑇𝑂 𝑆𝐼𝐿𝐸𝑁𝑇𝐾𝐼𝐿𝐿𝐸𝑅")
+                                kc.sendMessage(msg.to,"𝑊𝐸𝐿𝐶𝑂𝑀𝐸 𝑇𝑂 𝑆𝐼𝐿𝐸𝑁𝑇𝐾𝐼𝐿𝐿𝐸𝑅")
+                                kd.sendMessage(msg.to,"𝑊𝐸𝐿𝐶𝑂𝑀𝐸 𝑇𝑂 𝑆𝐼𝐿𝐸𝑁𝑇𝐾𝐼𝐿𝐿𝐸𝑅")
+                                ke.sendMessage(msg.to,"𝑊𝐸𝐿𝐶𝑂𝑀𝐸 𝑇𝑂 𝑆𝐼𝐿𝐸𝑁𝑇𝐾𝐼𝐿𝐿𝐸𝑅")
+                                kf.sendMessage(msg.to,"𝑊𝐸𝐿𝐶𝑂𝑀𝐸 𝑇𝑂 𝑆𝐼𝐿𝐸𝑁𝑇𝐾𝐼𝐿𝐿𝐸𝑅")
 
 
-                        elif cmd == "iv":
+                        elif cmd == "invbot":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 try:
@@ -2256,7 +2263,7 @@ def bot(op):
                                 except:
                                     pass
 
-                        elif cmd == "มา" or cmd == "in":
+                        elif cmd == "masuk" or cmd == "/masuk":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 G = cl.getGroup(msg.to)
@@ -2276,22 +2283,23 @@ def bot(op):
                                 
                                 
 
-                        elif cmd == "ออก" or cmd == "out":
+                        elif cmd == "pulang" or cmd == "/pulang":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 G = cl.getGroup(msg.to)
+                                ka.sendMessage(msg.to, "Im sorry im leave in group"+str(G.name))
                                 kb.leaveGroup(msg.to)
                                 kc.leaveGroup(msg.to)
                                 kd.leaveGroup(msg.to)
                                 ke.leaveGroup(msg.to)
                                 ka.leaveGroup(msg.to)
                                 kf.leaveGroup(msg.to)
-                                cl.leaveGroup(msg.to)
 
                         elif cmd == "bye":
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                 G = cl.getGroup(msg.to)
+                                cl.sendMessage(msg.to, "im sorry i leave in group "+str(G.name))
                                 cl.leaveGroup(msg.to)
                       
                         elif 'Proqr ' in msg.text:
@@ -2439,7 +2447,7 @@ def bot(op):
                                          msgs = ""
                                     cl.sendMessage(msg.to, "All protect mode off")
                        
-                        elif ("1bk " in msg.text):
+                        elif ("Kick1 " in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -2450,11 +2458,12 @@ def bot(op):
                                for target in targets:
                                    if target not in TEAM:
                                        try:
+                                           cl.sendMessage(msg.to, "Im sorry i kick out from group 😡")
                                            random.choice(team2).kickoutFromGroup(msg.to, [target])
                                        except:
                                            pass
 
-                        elif ("2bk " in msg.text):
+                        elif ("Kick2 " in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -2469,7 +2478,7 @@ def bot(op):
                                        except:
                                            pass
 
-                        elif ("3bk " in msg.text):
+                        elif ("Kick3 " in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -2484,7 +2493,7 @@ def bot(op):
                                        except:
                                            pass
 
-                        elif ("4bk " in msg.text):
+                        elif ("Kick4 " in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -2499,7 +2508,7 @@ def bot(op):
                                        except:
                                            pass
 
-                        elif ("5bk " in msg.text):
+                        elif ("Kick5 " in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -2510,11 +2519,12 @@ def bot(op):
                                for target in targets:
                                    if target not in Bots:
                                        try:
+                                           cl.sendMessage(msg.to, "Im sorry i kick out from group 😡")
                                            random.choice(team2).kickoutFromGroup(msg.to, [target])
                                        except:
                                            pass
                                            
-                        elif ("6bk " in msg.text):
+                        elif ("Kick6 " in msg.text):
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -2525,7 +2535,7 @@ def bot(op):
                                for target in targets:
                                    if target not in TEAM:
                                        try:
-                                           kf.kickoutFromGroup(msg.to, [target])
+                                           cl.kickoutFromGroup(msg.to, [target])
                                        except:
                                            pass
 
@@ -2622,7 +2632,7 @@ def bot(op):
                                 DZwait["Tdblacklist"] = False
                                 cl.sendMessage(msg.to,"Berhasil Refresh all command")
                        
-                        elif cmd == "bc" or text.lower() == 'Bc':
+                        elif cmd == "cek bl" or text.lower() == 'banlist':
                           if DZwait["selfbot"] == True:
                             if msg._from in ownerbot or msg._from in DHENZA:
                               if wait["blacklist"] == {}:
@@ -2633,7 +2643,7 @@ def bot(op):
                                       mc += "\n?? "+cl.getContact(mi_d).displayName
                                   cl.sendMessage(msg.to,mc + "")
                       
-                        elif cmd == "cb" or text.lower() == 'Cb':
+                        elif cmd == "clearban" or text.lower() == 'dbn':
                           if msg._from in ownerbot or msg._from in DHENZA:
                             if msg._from in ownerbot:
                               ang = cl.getContacts(wait["blacklist"])
@@ -2761,62 +2771,72 @@ def bot(op):
                                           pass
 
                         
-                        elif cmd == "ck":
+                        elif cmd == "batre":
                             if msg._from in ownerbot or msg._from in DHENZA:
+                               try:cl.inviteIntoGroup(to, [mid]);has = "OK"
+                               except:has = "NOT"
+                               try:cl.kickoutFromGroup(to, [mid]);has1 = "OK"
+                               except:has1 = "NOT"
+                               if has == "OK":sil = "🔋██ full 100%"
+                               else:sil = "🔌█▒. Low 0%"
+                               if has1 == "OK":sil1 = "🔋██ full 100%"
+                               else:sil1 = "🔌█▒ Low 0%"
+                               cl.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))
                                try:ka.inviteIntoGroup(to, [Amid]);has = "OK"
                                except:has = "NOT"
                                try:ka.kickoutFromGroup(to, [Amid]);has1 = "OK"
                                except:has1 = "NOT"
-                               if has == "OK":sil = "⭕"
-                               else:sil = "⛔"
-                               if has1 == "OK":sil1 = "⭕"
-                               else:sil1 = "⛔"
-                               ka.sendMessage(to, "sᴛᴀᴛᴜs:\n\nᴋɪᴄᴋ : {} \nɪɴᴠɪᴛᴇ : {}".format(sil1,sil))                               
+                               if has == "OK":sil = "🔋██ full 100%"
+                               else:sil = "🔌█▒ Low 0%"
+                               if has1 == "OK":sil1 = "🔋██ full 100%"
+                               else:sil1 = "🔌█▒ Low 0%"
+                               ka.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))                               
                                try:kb.inviteIntoGroup(to, [Bmid]);has = "OK"
                                except:has = "NOT"
                                try:kb.kickoutFromGroup(to, [Bmid]);has1 = "OK"
                                except:has1 = "NOT"
-                               if has == "OK":sil = "⭕"
-                               else:sil = "⛔"
-                               if has1 == "OK":sil1 = "⭕"
-                               else:sil1 = "⛔"
-                               kb.sendMessage(to, "sᴛᴀᴛᴜs:\n\nᴋɪᴄᴋ : {} \nɪɴᴠɪᴛᴇ : {}".format(sil1,sil))
+                               if has == "OK":sil = "🔋██ full 100%"
+                               else:sil = "🔌█▒. Low 0%"
+                               if has1 == "OK":sil1 = "🔋██ full 100%"
+                               else:sil1 = "🔌█▒ Low 0%"
+                               kb.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))
                                try:kc.inviteIntoGroup(to, [Cmid]);has = "OK"
                                except:has = "NOT"
                                try:kc.kickoutFromGroup(to, [Cmid]);has1 = "OK"
                                except:has1 = "NOT"
-                               if has == "OK":sil = "⭕"
-                               else:sil = "⛔"
-                               if has1 == "OK":sil1 = "⭕"
-                               else:sil1 = "⛔"
-                               kc.sendMessage(to, "sᴛᴀᴛᴜs:\n\nᴋɪᴄᴋ : {} \nɪɴᴠɪᴛᴇ : {}".format(sil1,sil))
+                               if has == "OK":sil = "🔋██ full 100%"
+                               else:sil = "🔌█▒. Low 0%"
+                               if has1 == "OK":sil1 = "🔋██ full 100%"
+                               else:sil1 = "🔌█▒ Low  0%"
+                               kc.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))                               
                                try:kd.inviteIntoGroup(to, [Dmid]);has = "OK"
                                except:has = "NOT"
                                try:kd.kickoutFromGroup(to, [Dmid]);has1 = "OK"
                                except:has1 = "NOT"
-                               if has == "OK":sil = "⭕"
-                               else:sil = "⛔"
-                               if has1 == "OK":sil1 = "⭕"
-                               else:sil1 = "⛔"
-                               kd.sendMessage(to, "sᴛᴀᴛᴜs:\n\nᴋɪᴄᴋ : {} \nɪɴᴠɪᴛᴇ : {}".format(sil1,sil))
+                               if has == "OK":sil = "🔋██ full 100%"
+                               else:sil = "🔌█▒ Low 0%"
+                               if has1 == "OK":sil1 = "🔋██ full 100%"
+                               else:sil1 = "🔌█▒ Low 0%"
+                               kd.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))                              
                                try:ke.inviteIntoGroup(to, [Emid]);has = "OK"
                                except:has = "NOT"
                                try:ke.kickoutFromGroup(to, [Emid]);has1 = "OK"
                                except:has1 = "NOT"
-                               if has == "OK":sil = "⭕"
-                               else:sil = "⛔"
-                               if has1 == "OK":sil1 = "⭕"
-                               else:sil1 = "⛔"
-                               ke.sendMessage(to, "sᴛᴀᴛᴜs:\n\nᴋɪᴄᴋ : {} \nɪɴᴠɪᴛᴇ : {}".format(sil1,sil))
+                               if has == "OK":sil = "🔋██ full 100%"
+                               else:sil = "🔌█▒ Low 0%"
+                               if has1 == "OK":sil1 = "🔋██ full 100%"
+                               else:sil1 = "🔌█▒ Low 0%"
+                               ke.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil))
                                try:kf.inviteIntoGroup(to, [Fmid]);has = "OK"
                                except:has = "NOT"
                                try:kf.kickoutFromGroup(to, [Fmid]);has1 = "OK"
                                except:has1 = "NOT"
-                               if has == "OK":sil = "⭕"
-                               else:sil = "⛔"
-                               if has1 == "OK":sil1 = "⭕"
-                               else:sil1 = "⛔"
-                               kf.sendMessage(to, "sᴛᴀᴛᴜs:\n\nᴋɪᴄᴋ : {} \nɪɴᴠɪᴛᴇ : {}".format(sil1,sil))
+                               if has == "OK":sil = "🔋██ full 100%"
+                               else:sil = "🔌█▒ Low 0%"
+                               if has1 == "OK":sil1 = "🔋██ full 100%"
+                               else:sil1 = "🔌█▒ Low 0%"
+                               kf.sendMessage(to, "Status:\n\n🔴Kick : {} \n🔴Invite : {}".format(sil1,sil)) 
+                               
 #===========JOIN TICKET============#
                         elif "/ti/g/" in msg.text.lower():
                           if DZwait["selfbot"] == True:
